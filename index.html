@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You ❤️</title>
+  <title>For Anu ❤️</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -34,54 +32,17 @@
       pointer-events: none;
     }
 
-    .floating-heart:nth-child(1) {
-      left: 8%;
-      animation-delay: 0s;
-      font-size: 22px;
-    }
-
-    .floating-heart:nth-child(2) {
-      left: 22%;
-      animation-delay: 1.2s;
-      font-size: 28px;
-    }
-
-    .floating-heart:nth-child(3) {
-      left: 42%;
-      animation-delay: 2.4s;
-      font-size: 20px;
-    }
-
-    .floating-heart:nth-child(4) {
-      left: 63%;
-      animation-delay: 0.8s;
-      font-size: 30px;
-    }
-
-    .floating-heart:nth-child(5) {
-      left: 82%;
-      animation-delay: 1.8s;
-      font-size: 24px;
-    }
-
-    .floating-heart:nth-child(6) {
-      left: 50%;
-      animation-delay: 3.2s;
-      font-size: 34px;
-    }
+    .floating-heart:nth-child(1) { left: 8%; animation-delay: 0s; font-size: 22px; }
+    .floating-heart:nth-child(2) { left: 22%; animation-delay: 1.2s; font-size: 28px; }
+    .floating-heart:nth-child(3) { left: 42%; animation-delay: 2.4s; font-size: 20px; }
+    .floating-heart:nth-child(4) { left: 63%; animation-delay: 0.8s; font-size: 30px; }
+    .floating-heart:nth-child(5) { left: 82%; animation-delay: 1.8s; font-size: 24px; }
+    .floating-heart:nth-child(6) { left: 50%; animation-delay: 3.2s; font-size: 34px; }
 
     @keyframes floatUp {
-      0% {
-        transform: translateY(0) scale(0.8) rotate(0deg);
-        opacity: 0;
-      }
-      15% {
-        opacity: 0.8;
-      }
-      100% {
-        transform: translateY(-110vh) scale(1.35) rotate(25deg);
-        opacity: 0;
-      }
+      0% { transform: translateY(0) scale(0.8) rotate(0deg); opacity: 0; }
+      15% { opacity: 0.8; }
+      100% { transform: translateY(-110vh) scale(1.35) rotate(25deg); opacity: 0; }
     }
 
     .card {
@@ -98,14 +59,8 @@
     }
 
     @keyframes popIn {
-      from {
-        opacity: 0;
-        transform: scale(0.92);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.92); }
+      to { opacity: 1; transform: scale(1); }
     }
 
     .heart-gif {
@@ -116,18 +71,10 @@
     }
 
     @keyframes heartbeat {
-      0%, 100% {
-        transform: scale(1);
-      }
-      25% {
-        transform: scale(1.18);
-      }
-      45% {
-        transform: scale(0.96);
-      }
-      65% {
-        transform: scale(1.22);
-      }
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.18); }
+      45% { transform: scale(0.96); }
+      65% { transform: scale(1.22); }
     }
 
     h2 {
@@ -152,9 +99,7 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    button:active {
-      transform: scale(0.95);
-    }
+    button:active { transform: scale(0.95); }
 
     .yes {
       background: #ff4f81;
@@ -190,14 +135,8 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .small {
@@ -219,18 +158,18 @@
   <div class="card">
     <div class="heart-gif" id="mainHeart">💌</div>
 
-    <h2 id="question">Do you really love me? ❤️</h2>
+    <h2 id="question">Anu, do you really love me? ❤️</h2>
 
     <div class="buttons" id="buttons">
       <button class="yes" onclick="yesClick()">Yes ❤️</button>
       <button class="no" onclick="noClick()">No</button>
     </div>
 
-    <p id="cry">Why? 😢<br>Please press Yes ❤️</p>
+    <p id="cry">Why, Anu? 😢<br>Please press Yes ❤️</p>
 
     <div id="message">
       <div class="final-hearts">❤️ 💖 ❤️</div>
-      I love you ❤️<br><br>
+      Anu, I love you ❤️<br><br>
       You are my partner, my happiness, and my favorite person.<br><br>
       I am lucky to have you in my life 💖
       <div class="small">Forever yours 🥹</div>
@@ -248,7 +187,7 @@
       const mainHeart = document.getElementById("mainHeart");
 
       if (step === 1) {
-        question.innerText = "Really? Once more 🥹❤️";
+        question.innerText = "Really, Anu? Once more 🥹❤️";
         mainHeart.innerText = "🥹";
         cry.style.display = "none";
         step = 2;
@@ -266,7 +205,7 @@
       const cry = document.getElementById("cry");
       const mainHeart = document.getElementById("mainHeart");
 
-      question.innerText = "Please say Yes 🥺";
+      question.innerText = "Please say Yes, Anu 🥺";
       mainHeart.innerText = "😭";
       cry.style.display = "block";
     }
